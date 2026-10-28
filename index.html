@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- task - 1 -->
+    <form action="form">
+      <fieldset>
+        <legend>"Əsas input növləri və sərhədlər":</legend>
+        <label for="name">Ad və Soyad:</label>
+        <input
+          type="text"
+          name="fullname"
+          id="fullname"
+          placeholder="Ad və Soyadinizi daxil edin"
+          required
+        /><br /><br />
+        <label for="age">Yasinizi daxil edin:</label>
+        <input
+          type="number"
+          name="number"
+          id="number"
+          minlength="18"
+          maxlength="99"
+          placeholder="Yasinizi daxil edin"
+        /><br /><br />
+        <label for="email">E-poct</label>
+        <input type="email" name="email" id="email" /><br /><br />
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+    <br /><br />
+    <div>
+      <p id="currentName">Cari istifadeci:</p>
+    </div>
+
+    <!-- task -2 -->
+    <form action="form">
+      <fieldset>
+        <legend>Sifre deyis formu</legend>
+        <input type="password" name="password" id="password" />
+        <input
+          type="new password"
+          name="new password"
+          id="new password"
+          pattern="[A - z] {2} [0 - 9] {1}"
+          minlength="8"
+          title="Istifadeci sifresi daxil edilmesi vacibdir."
+        />
+      </fieldset>
+    </form>
+
+    <!-- task - 3-->
+    <form action="form">
+      <fieldset>
+        <legend>Mehsul sifarisi</legend>
+        <select name="paymentMethod" id="paymentMethod">
+          <optgroup label="regions">
+            <option value="abseron">Abseron</option>
+            <option value="nermanov">Nermanov</option>
+            <option value="bineqedi">Bineqedi</option>
+            <option value="yasamal">Yasamal</option>
+          </optgroup>
+
+          <label for="cashPayment">CashPayment</label>
+          <input type="radio" name="cashPayment" id="cashPayment" /><br /><br />
+          <label for="bankCard">Bank Card</label>
+          <input
+            type="radio"
+            name="bankCard"
+            id="bankCard"
+            checked="bankCard"
+          /><br /><br />
+          <label for="cardDoor">Card Door</label>
+          <input type="radio" name="cardDoor" id="cardDoor" />
+        </select>
+      </fieldset>
+    </form>
+
+    <!-- task-4 -->
+    <form action="form">
+      <fieldset>
+        <legend>Qeydiyyat formu</legend>
+        <select name="sessiyaChoose" id="sessiyaChoose">
+          <option value="fronted">Fronted</option>
+          <option value="backend">Backend</option>
+          <option value="uI/ux">UI/UX</option>
+          <input type="checkbox" name="checkbox" id="checkbox" /></select
+        ><br /><br />
+
+        <textarea name="text" id="text" rows="4" cols="50"></textarea
+        ><br /><br />
+        <label for="tems and roles">Tems and Roles</label>
+        <input
+          type="checkbox"
+          name="checkbox"
+          id="checkbox"
+          required="checkbox"
+        />
+      </fieldset>
+    </form>
+  </body>
+</html>
